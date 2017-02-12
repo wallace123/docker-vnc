@@ -16,7 +16,7 @@ RUN echo "firefox" >> ~/.bashrc
 COPY setup_vnc.sh /tmp/
 RUN chmod +x /tmp/setup_vnc.sh
 
-# Start firefox on startup
+# Port 5900 for VNC session
 EXPOSE 5900
 
 # Run the script
